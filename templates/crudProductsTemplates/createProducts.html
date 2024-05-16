@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link href="./css/Menu.css" rel="stylesheet">
+    <title>Crear Producto</title>
+</head>
+<body>
+    <div class="container text-center center-screen">
+        <h1 class="my-4">Crear Producto</h1>
+        <form id="fromProduct" class="text-left">
+            <div class="form-group">
+                <label for="descripcion">Descripción:</label>
+                <input type="text" id="descripcion" name="descripcion" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="precio">Precio:</label>
+                <input type="text" id="precio" name="precio" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="stock">Stock:</label>
+                <input type="text" id="stock" name="stock" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Guardar Producto</button>
+        </form>
+        <ul class="nav justify-content-center mt-4">
+            <li class="nav-item mr-2">
+                <a class="btn btn-secondary" href="../MenúProducts.html">
+                    <i class="fas fa-arrow-left"></i> Volver al menú
+                </a>
+            </li>
+            <li class="nav-item ml-2">
+                <a class="btn btn-secondary" href="../MenúPrimary.html">
+                    <i class="fas fa-home"></i> Menú principal
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="module" src="../../crudActions/crudProducts/createProducts.js" ></script>
+</body>
+</html>

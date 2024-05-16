@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
+    <link href="./css/Menu.css" rel="stylesheet">
+    <title>Documento</title>
+</head>
+<body>
+    <div class="container text-center center-screen">
+        <h1 class="my-4" id="welcome-message"></h1>
+        <p>Esta menu te permite gestionar clientes, productos y ventas. Haz clic en los botones de abajo para navegar.</p>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="btn btn-primary" href="./MenúClients.html">
+                    <i class="fas fa-user"></i> Cliente
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-primary" href="./MenúProducts.html">
+                    <i class="fas fa-box"></i> Productos
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-primary" href="./MenúVentas.html">
+                    <i class="fas fa-shopping-cart"></i> Ventas
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="../../crudActions/func/mensaje.js"></script>
+    <script>
+        if (!localStorage.getItem('products')) {
+            localStorage.setItem('products', JSON.stringify([]));
+        }
+
+        if (!localStorage.getItem('clients')) {
+            localStorage.setItem('clients', JSON.stringify([]));
+        }
+
+        if (!localStorage.getItem('sales')) {
+            localStorage.setItem('sales', JSON.stringify([]));
+        }
+    </script>
+</body>
+</html>
